@@ -1,5 +1,5 @@
 function generateStaticParams() {}
  
 export default function Page() {
-  return <h1>Scrapbook</h1>
+  return <h1>02/03/2024</h1>
 }

@@ -1,9 +1,19 @@
-import Image from "next/image";
+'use client'
+
+import { RefObject, useRef } from "react";
 
 export default function Home() {
+  const audioRef: RefObject<HTMLAudioElement | null> = useRef(null);
+  function playAudio() {
+    audioRef.current?.fastSeek(0);
+    audioRef.current?.play();
+  }
+
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      
+    <div className="grid items-center justify-items-center min-h-screen">
+      <h1 className="hover:cursor-pointer" onClick={playAudio}>Rebecca Sparks, will you be my <span>baby</span> and my Valentine?</h1>
+      <div className="flowers"></div>
+      <audio ref={audioRef} src="/kermit/take3.mp3" preload="auto"/>
     </div>
   );
 }
