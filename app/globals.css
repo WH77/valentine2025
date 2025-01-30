@@ -24,15 +24,19 @@ h1 {
   font-size: 5vw;
 }
 
+h2 {
+  font-size: 4vw;
+}
+
 .strikethrough {
   text-decoration: line-through;
   text-decoration-thickness: 1px;
 }
 
-.center-title {
-  
+.page {
+  display: grid;
 }
 
-.clickable:hover {
-  cursor: pointer;
+.contain-size {
+  contain: size;
 }
