@@ -21,7 +21,8 @@ body {
 }
 
 h1 {
-  font-size: 5vw;
+  font-size: 4rem;
+  text-align: center;
   z-index: 999;
 }
 
@@ -40,7 +41,8 @@ h2 {
   height: 100%;
   grid-template-columns: 5fr 1fr 4fr 2fr 3fr 3fr 2fr 4fr 1fr 5fr;
   /* grid-template-rows: [header-end] minmax(var(--verticalPadding), auto) [p1-start] minmax(0, auto) [p1-end] minmax(var(--verticalPadding), auto) [fig2-start] var(--overlap) [fig1-end] minmax(var(--verticalPadding), auto) [p2-start] minmax(0, auto) [p2-end] minmax(var(--verticalPadding), auto) [fig3-start] var(--overlap) [fig2-end] minmax(var(--verticalPadding), auto) [p3-start] minmax(0, auto) [p3-end] minmax(var(--verticalPadding), auto) [fig3-end]; */
-  grid-template-rows: 1fr 1fr;
+  /* grid-template-rows: 1fr 1fr; */
+  grid-template-rows: repeat(5, [r1 r2 r3 r4 r5] 20%);
   grid-auto-rows: minmax(var(--verticalPadding), auto);
   margin: 0 auto;
 }
