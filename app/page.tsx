@@ -3,6 +3,7 @@
 import { RefObject, useRef, useState } from "react";
 import Image from 'next/image';
 import snoopers from '../public/kermit/snoopers.png';
+import snoopers2 from '../public/kermit/snoopers2.png';
 
 export default function Home() {
   const [playing, setPlaying] = useState(false);
@@ -18,11 +19,15 @@ export default function Home() {
   }
 
   return (
-    <div className={`page min-h-screen max-h-screen ${playing ? '' : 'hover:cursor-pointer'}`} onClick={playAudio}>
+    <div className={`page h-screen overflow-none ${playing ? '' : 'hover:cursor-pointer'}`} onClick={playAudio}>
       <div className="center grid items-center justify-items-center max-h-screen">
         <h1>Rebecca Sparks, will you be my <span>baby</span> and my Valentine?</h1>
-        <Image className="h-full w-auto object-fit-contain" src={snoopers} alt="snoopy <3" />
+        <Image className="h-full w-auto object-contain" src={snoopers} alt="snoopy <3" />
       </div>
+      <div className="arrangement grid items-center justify-items-center max-h-screen">
+        <Image className="h-full w-auto object-contain" src={snoopers2} alt="snoopy on 1 knee" />
+      </div>
+
       <div className="decor max-h-screen">
         <div className="contain-size flowers"></div>
       </div>
