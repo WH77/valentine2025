@@ -21,7 +21,7 @@ export default function Home() {
     <div className={`page min-h-screen max-h-screen ${playing ? '' : 'hover:cursor-pointer'}`} onClick={playAudio}>
       <div className="center grid items-center justify-items-center max-h-screen">
         <h1>Rebecca Sparks, will you be my <span>baby</span> and my Valentine?</h1>
-        <Image fill={true} src={snoopers} alt="snoopy <3" />
+        <Image className="h-full w-auto object-fit-contain" src={snoopers} alt="snoopy <3" />
       </div>
       <div className="decor max-h-screen">
         <div className="contain-size flowers"></div>

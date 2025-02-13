@@ -48,6 +48,10 @@ h2 {
   grid-template-rows: 50vh 50vh;
 }
 
+.bottom-image {
+  height: 50%;
+}
+
 .decor {
   display: grid;
   grid-template-columns: 5fr 1fr 4fr 2fr 3fr 3fr 2fr 4fr 1fr 5fr;
