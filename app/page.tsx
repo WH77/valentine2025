@@ -37,7 +37,7 @@ export default function Home() {
       <div className="decor max-h-screen">
         <div className="contain-size flowers"></div>
       </div>
-      <audio ref={audioRef} src="/kermit/take3.mp3" preload="auto" />
+      <audio ref={audioRef} src="./kermit/take3.mp3" preload="auto" />
     </div>
   );
 }
