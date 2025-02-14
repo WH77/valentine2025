@@ -5,6 +5,9 @@ import Image from 'next/image';
 import snoopers from '../public/kermit/snoopers.png';
 import snoopers2 from '../public/kermit/snoopers2.png';
 import reporter from '../public/kermit/reporter.png';
+import thonking from '../public/kermit/thonking.png';
+import frontal from '../public/kermit/frontal.png';
+import suit from '../public/kermit/suit.png';
 
 export default function Home() {
   const [playing, setPlaying] = useState(false);
@@ -23,11 +26,13 @@ export default function Home() {
     <div className={`page h-screen overflow-none ${playing ? '' : 'hover:cursor-pointer'}`} onClick={playAudio}>
       <div className="center grid items-center justify-items-center max-h-screen">
         <h1>Rebecca Sparks, will you be my <span>baby</span> and my Valentine?</h1>
-        <Image className="h-full w-auto object-contain" src={snoopers} alt="snoopy <3" />
+        <Image className="h-full w-auto object-contain" src={snoopers} priority={true} alt="snoopy <3" />
       </div>
       <div className="arrangement grid items-center justify-items-center max-h-screen">
         <Image className="h-full w-auto object-contain snoopers2" src={snoopers2} alt="snoopy on 1 knee" />
         <Image className="h-full w-auto object-contain reporter" src={reporter} alt="Kermit reporter" />
+        <Image className="w-auto object-contain thonking" src={thonking} alt="Kermit thonking" />
+        <Image className="w-auto object-contain frontal" src={frontal} alt="Kermit demure" />
       </div>
 
       <div className="decor max-h-screen">
