@@ -3,7 +3,6 @@
 import { RefObject, useRef, useState } from "react";
 import Image from 'next/image';
 import snoopers from '../public/kermit/snoopers.png';
-import snoopers2 from '../public/kermit/snoopers2.png';
 import reporter from '../public/kermit/reporter.png';
 import thonking from '../public/kermit/thonking.png';
 import frontal from '../public/kermit/frontal.png';
@@ -29,10 +28,10 @@ export default function Home() {
         <Image className="h-full w-auto object-contain" src={snoopers} priority={true} alt="snoopy <3" />
       </div>
       <div className="arrangement grid items-center justify-items-center max-h-screen">
-        <Image className="h-full w-auto object-contain snoopers2" src={snoopers2} alt="snoopy on 1 knee" />
         <Image className="h-full w-auto object-contain reporter" src={reporter} alt="Kermit reporter" />
-        <Image className="w-auto object-contain thonking" src={thonking} alt="Kermit thonking" />
+        <Image className="h-full w-auto object-contain thonking" src={thonking} alt="Kermit thonking" />
         <Image className="w-auto object-contain frontal" src={frontal} alt="Kermit demure" />
+        <Image className="h-full w-auto object-contain suit" src={suit} alt="Kermit suit" />
       </div>
 
       <div className="decor max-h-screen">
