@@ -76,3 +76,10 @@ h2 {
   grid-row: 5;
   transform: scaleX(-1);
 }
+
+.reporter {
+  grid-column-start: -1;
+  grid-column-end: -1;
+  grid-row: 5;
+  transform: scaleX(-1);
+}

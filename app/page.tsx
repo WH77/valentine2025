@@ -4,6 +4,7 @@ import { RefObject, useRef, useState } from "react";
 import Image from 'next/image';
 import snoopers from '../public/kermit/snoopers.png';
 import snoopers2 from '../public/kermit/snoopers2.png';
+import reporter from '../public/kermit/reporter.png';
 
 export default function Home() {
   const [playing, setPlaying] = useState(false);
@@ -26,6 +27,7 @@ export default function Home() {
       </div>
       <div className="arrangement grid items-center justify-items-center max-h-screen">
         <Image className="h-full w-auto object-contain snoopers2" src={snoopers2} alt="snoopy on 1 knee" />
+        <Image className="h-full w-auto object-contain reporter" src={reporter} alt="Kermit reporter" />
       </div>
 
       <div className="decor max-h-screen">
