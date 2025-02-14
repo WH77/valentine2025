@@ -25,7 +25,7 @@ export default function Home() {
         <Image className="h-full w-auto object-contain" src={snoopers} alt="snoopy <3" />
       </div>
       <div className="arrangement grid items-center justify-items-center max-h-screen">
-        <Image className="h-full w-auto object-contain" src={snoopers2} alt="snoopy on 1 knee" />
+        <Image className="h-full w-auto object-contain snoopers2" src={snoopers2} alt="snoopy on 1 knee" />
       </div>
 
       <div className="decor max-h-screen">
